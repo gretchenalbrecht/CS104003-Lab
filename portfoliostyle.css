@@ -35,3 +35,35 @@ table{
   border: 5px dashed red; 
   padding: 30px 30px 30px 30px;
 }
+
+.para{
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 25px;
+}
+
+.link1{
+color:forestgreen;
+}
+
+.link1:hover{
+color: red;
+}
+
+.link2{
+  color: forestgreen;
+}
+
+.link2:visited{
+  color:gray
+}
+
+.link3{
+  color: forestgreen
+}
+
+.link3:active{
+  color:orange
+}
