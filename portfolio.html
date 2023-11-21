@@ -167,10 +167,14 @@
 
               <div>
 
+              
+
                 <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
              <div id="demo" class="collapse">
                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              </div>
+
+             <br><br>
 
              <script>
                 let num1 = 10
@@ -203,6 +207,26 @@
                 console.log(result)
 
              </script>
+
+             <button id="changeTextBtn" onclick="changeInfo()">
+                <p id="displayText">
+                    sample text
+                 </p>
+             </button>
+
+             
+
+             <script>
+
+                document.getElementById('changeTextBtn').addEventListener("click");
+                
+                function changeInfo(){
+                let para = document.getElementById('displayText')
+                para.innerHTML = "Hello, JavaScript World!"
+                }
+             </script>
+
+             
            
              
     </body>
