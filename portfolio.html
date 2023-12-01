@@ -214,9 +214,35 @@
                  </p>
              </button>
 
+             <br><br><br>
+
+             
+
              
 
              <script>
+
+                document.getElementById('sub').addEventListener("click");
+
+                function myfunction(){
+                    timeout = setTimeout(alertFunc, 3000);
+                }
+
+                function alertFunc(){
+                    alert("success!");
+                }
+
+                
+
+                function validateform(){
+                    let u_name = document.forms['myform']['username'].value 
+                    let u_password = document.forms['myforms']['password'].value
+                }
+
+            
+                     if(u_name == '' || u_password == ''){
+                        alert('username/password is empty, please fill out the input field')
+                    }
 
                 document.getElementById('changeTextBtn').addEventListener("click");
                 
@@ -225,6 +251,34 @@
                 para.innerHTML = "Hello, JavaScript World!"
                 }
              </script>
+
+             <br><br><br>
+
+             <form id="myForm">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username"name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password"name="password"><br>
+                <input type="submit" value="Submit">
+               </form>
+               <script>
+               document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+               
+             
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+               
+                if (!username || !password) {
+                   alert('Please enter your username and password');
+                   return;
+                }
+               
+                setTimeout(function() {
+                   alert('submission successful');
+                }, 3000);
+               });
+            </script>
 
              
            
